@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% block mycss %}
+{% load static %}
+  <link href="/cseweb/csea{% static 'users/style.css' %}" rel="stylesheet"/>
+  <style>
+  .backback {
+  background-image: url(/cseweb/csea/static/home/images/background_alum.jpg);
+  opacity: 0.8;
+  background-size: 100% 100%;
+
+}
+  </style>
+{% endblock mycss %}
+{% load crispy_forms_tags %}
+{% block main %}
+      <!-- FORM HERE -->
+      <div class="backback">
+      <form method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        <div class="media">
+        <img class="account-img" src="/cseweb/csea{{ user.image.url }}">
+        <div class="media-body">
+          <h2 class="alum"> <p>&nbsp;</p>{{user.first_name}} {{user.last_name}} </h2>
+          <p class="em"> {{user.email}} </p>
+        </div>
+      </div>
+        <fieldset class="form-group">
+        <legend class="border-bottom mb-4">Profile</legend>
+          {{ u_form|crispy }}
+        </fieldset>
+        <div class="form-group">
+          <button class="btn btn-outline-info" type="submit">Update</button>
+        </div>
+      </form>
+    </div>
+{% endblock main %}

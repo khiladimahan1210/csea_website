@@ -1,0 +1,385 @@
+{% extends "base.html" %}
+{% block team %}active{% endblock %}
+{% block mycss %}
+<style>
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,800,700,300);
+@import url(https://fonts.googleapis.com/css?family=Squada+One);
+@import url('https://fonts.googleapis.com/css?family=Raleway:800&display=swap');
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+.heading {
+font-family: 'Proxima Nova Soft', 'Helvetica Neue', sans-serif;
+font-size: 36px;
+}
+body{
+background: #ffffff
+}
+
+
+#logo {
+  font-family: 'Raleway', sans-serif;
+  color: #ffffff;
+  text-decoration: none;
+  /*text-transform: uppercase;*/
+  font-size: 150px;
+  font-weight: 800;
+  letter-spacing: -3px;
+  line-height: 1;
+  text-shadow: #EDEDED 3px 2px 0;
+  position: relative;
+  margin-top: 0px;
+
+}
+
+.column {
+  float: left;
+
+    /*display: block;*/
+
+
+}
+
+.containers h2 {
+  font-size: 20px;
+  /*font-weight: bold;*/
+  font-family: 'Proxima Nova Soft', 'Helvetica Neue', sans-serif;
+}
+
+@media screen and (max-width: 650px) {
+  .col-lg-4 {
+    width: 100%;
+    display: block;
+
+  }
+}
+
+.myImg {
+  height: 210px;
+  width: 216px;
+  margin-top: 20px;
+  object-fit: cover;
+}
+
+
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2 );
+    width: 280px;
+   height: 350px;
+  margin-bottom: 16px;
+  padding: 0 15px;
+  margin-left: 10px;
+  margin-right: 10px;
+  position: relative;
+ background: LightGray;  /* fallback for old browsers */
+/*background: -webkit-linear-gradient(to bottom, #CFDEF3, #E0EAFC);*/   /*Chrome 10-25, Safari 5.1-6 */
+/*background: linear-gradient(to bottom, #CFDEF3, #E0EAFC);*/ /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+border-radius:10px;
+
+}
+
+.containers {
+  padding: 0 16px;
+}
+
+.containers::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+  margin-top: -5px;
+  margin-bottom: 20px;
+}
+
+.col-lg-4 {
+  padding-bottom: 20px;
+
+
+}
+.upper{
+   /* The image used */
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/cseweb/csea/static/home/images/csea_team.jpg");
+  /* Full height */
+  height: 550px;
+
+  /* Center and scale the image nicely */
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+
+        /*    height: 40vh;
+          background-attachment: fixed;
+          background-size: cover;
+          margin-top:0;
+          padding-top:0; */
+}
+.mail{
+ /* display: inline-block;*/
+ /* padding: 8px;*/
+  /*text-align: center;*/
+/*position: absolute;*/
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-bottom:   0px;
+  padding-bottom: 0px;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  width: 80%;
+  position: absolute;
+  right: 0px;
+  margin-right: 26px;
+  margin-left: 26px;
+  bottom:   10px;
+  /*margin-bottom: 0px !important;*/
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+.row {
+  padding-bottom: 30px;
+}
+.cent{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+</style>
+{% endblock %}
+
+{% block main %}
+ <center>
+<div class="upper image"><h1 id="logo">CSEA'19 Team</h1>
+</div>
+<br>
+<div class="col-lg-1"></div>
+<div class="col-lg-10 cent ">
+<div class="row">
+  <div class="col-lg-4">
+    <div class="card">
+      <img class="myImg"  src="/cseweb/csea/static/home/images/svrao.jpeg" alt="John" style="width:100%">
+      <div class="containers">
+        <h2>Dr. SV Rao</h2>
+        <p class="title">President</p>
+
+        <p>svrao@iitg.ac.in</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-lg-4">
+    <div class="card">
+      <img class="myImg"  src="/cseweb/csea/static/home/images/anand.jpeg" alt="John" style="width:100%">
+      <div class="containers">
+        <h2>Ashish Anand</h2>
+        <p class="title">Faculty Adivsor</p>
+
+        <p>anand.ashish@iitg.ac.in</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-lg-4">
+    <div class="card">
+      <img class="myImg"  src="/cseweb/csea/static/home/images/deepkesh.jpeg" alt="John" style="width:100%">
+      <div class="containers">
+        <h2>Deepanjan Kesh</h2>
+        <p class="title">Faculty Advisor</p>
+
+        <p>deepkesh@iitg.ac.in</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-lg-4 ">
+    <div class="card">
+      <img class="myImg"  src="/cseweb/csea/static/home/images/jatin_goyal.jpg" alt="Jatin Goyal" style="width:100%">
+      <div class="containers">
+        <h2>Jatin Goyal</h2>
+        <p class="title">General Secretary</p>
+      </div>
+      <p class="mail">jatingoyal@iitg.ac.in</p>
+    </div>
+  </div>
+
+  <div class="col-lg-4">
+    <div class="card">
+      <img class="myImg"  src="/cseweb/csea/static/home/images/apurv_n_sarogi.jpg" alt="Mike" style="width:100%">
+      <div class="containers">
+        <h2>Apurva N Saraogi</h2>
+        <p class="title">Technical and Events Head</p>
+
+        <p>apurva9@iitg.ac.in</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-4">
+    <div class="card">
+      <img class="myImg"  src="/cseweb/csea/static/home/images/mitansh_jain.jpg" alt="John" style="width:100%">
+      <div class="containers">
+        <h2>Mitansh Jain</h2>
+        <p class="title">Technical and Events Head</p>
+
+        <p>mitansh1398@iitg.ac.in</p>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="col-lg-4">
+    <div class="card">
+      <img class="myImg"  src="/cseweb/csea/static/home/images/shaurya_gomber.jpg" alt="John" style="width:100%">
+      <div class="containers">
+        <h2>Shaurya Gomber</h2>
+        <p class="title">Treasurer</p>
+
+        <p>shaurya.gomber98@iitg.ac.in</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-4">
+    <div class="card">
+      <img class="myImg"  src="/cseweb/csea/static/home/images/aman_raj.jpg" alt="John" style="width:100%">
+      <div class="containers">
+        <h2>Aman Raj</h2>
+        <p class="title">Technical Executive</p>
+
+        <p>aman170101006@iitg.ac.in</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-lg-4">
+    <div class="card">
+      <img class="myImg"  src="/cseweb/csea/static/home/images/udbhav.jpg" alt="Udbhav" style="width:100%">
+      <div class="containers">
+        <h2>Udbhav Chugh</h2>
+        <p class="title">SAIL Representative</p>
+
+        <p>udbha170123055@iitg.ac.in</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-4">
+    <div class="card">
+      <img class="myImg"  src="/cseweb/csea/static/home/images/abhishek_jaiswal.jpg" alt="John" style="width:100%">
+      <div class="containers">
+        <h2>Abhishek Jaiswal</h2>
+        <p class="title">Event Executive</p>
+
+        <p>abhis170101002@iitg.ac.in</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-4">
+    <div class="card">
+      <img class="myImg"  src="/cseweb/csea/static/home/images/mayank_wadhwani.jpg" alt="John" style="width:100%">
+      <div class="containers">
+        <h2>Mayank Wadhwani</h2>
+        <p class="title">Event Executive</p>
+
+        <p>mayan170101038@iitg.ac.in</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-4">
+    <div class="card">
+      <img class="myImg"  src="/cseweb/csea/static/home/images/niyati.jpg" alt="Niyati Chaudhary" style="width:100%">
+      <div class="containers">
+        <h2>Niyati Chaudhary</h2>
+        <p class="title">Technical Coordinator</p>
+
+        <p>niyati18@iitg.ac.in</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-4">
+    <div class="card">
+      <img class="myImg"  src="/cseweb/csea/static/home/images/tejas.jpg" alt="John" style="width:100%">
+      <div class="containers">
+        <h2>Tejas Khairnar</h2>
+        <p class="title">Technical Coordinator</p>
+
+        <p>example@example.com</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-lg-4">
+    <div class="card">
+      <img class="myImg"  src="/cseweb/csea/static/home/images/harsh.jpg" alt="John" style="width:100%">
+      <div class="containers">
+        <h2>Harsh Gupta</h2>
+        <p class="title">Event Coordinator</p>
+
+        <p>gupta18e@iitg.ac.in</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-4">
+    <div class="card">
+      <img class="myImg"  src="/cseweb/csea/static/home/images/sai_sumanth.jpg" alt="John" style="width:100%">
+      <div class="containers">
+        <h2>Sai Sumanth</h2>
+        <p class="title">Event Coordinator</p>
+
+        <p>madicher@iitg.ac.in</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-4">
+    <div class="card">
+      <img class="myImg"  src="/cseweb/csea/static/home/images/harshit_gupta.jpg" alt="John" style="width:100%">
+      <div class="containers">
+        <h2>Harshit Gupta</h2>
+        <p class="title">Branch Representative, Batch 2016 - 2020</p>
+
+        <p>harshitgupta@iitg.ac.in</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-4">
+    <div class="card">
+      <img class="myImg"  src="/cseweb/csea/static/home/images/utkarsh_jain.jpg" alt="John" style="width:100%">
+      <div class="containers">
+        <h2>Utkarsh Jain</h2>
+        <p class="title">Branch Representative, Batch 2017 - 2021</p>
+
+        <p>jain170101075@iitg.ac.in</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-4">
+    <div class="card">
+      <img class="myImg"  src="/cseweb/csea/static/home/images/saurabh_baranwal.jpg" alt="John" style="width:100%">
+      <div class="containers">
+        <h2>Saurabh Baranwal</h2>
+        <p class="title">Branch Representative, Batch 2018 - 2022</p>
+
+        <p>baranwal18@iitg.ac.in</p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+</center>
+{% endblock %}
